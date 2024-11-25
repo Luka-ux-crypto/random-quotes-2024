@@ -5,7 +5,8 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: #121212; /* Dark background for body */
+  color: #e0e0e0; /* Light text color for readability */
 }
 
 .container {
@@ -13,33 +14,41 @@ body {
   max-width: 600px;
   padding: 20px;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e; /* Slightly lighter dark background for contrast */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow effect for depth */
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff; /* White for the heading */
 }
 
 p {
   font-size: 1.5rem;
-  color: #333;
-  min-height: 60px; /* Keep some space for the quote text */
+  color: #b0b0b0; /* Softer gray for the quote text */
+  min-height: 60px; /* Maintain consistency for quote area */
   margin: 1rem 0;
 }
 
-button {
+.btn {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #6200ea; /* Vibrant purple button for emphasis */
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #3700b3; /* Darker purple for hover effect */
+}
+.quote {
+  font-style: italic;
+}
+.quote::before,
+.quote::after {
+  content: '"';
 }
