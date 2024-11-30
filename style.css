@@ -46,7 +46,7 @@ p {
 .btn:hover {
   background-color: #3700b3; /* Darker purple for hover effect */
 }
-#toggle-favorite-btn {
+#favorite-btn {
   display: none;
 }
 .quote {
