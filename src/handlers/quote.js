@@ -1,3 +1,4 @@
+import quotes from '../data/quotes.js';
 import { generateRandomInt } from '../utils.js';
 import { handleFavorite } from './favorites.js';
 
@@ -22,3 +23,10 @@ function choseRandomQuote(quotes) {
 }
 
 export { handleQuote };
+
+const wsithIds = quotes.map((quote) => {
+  return {
+    id: generateRandomId(),
+    ...quote,
+  };
+});
