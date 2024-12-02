@@ -23,10 +23,3 @@ function choseRandomQuote(quotes) {
 }
 
 export { handleQuote };
-
-const wsithIds = quotes.map((quote) => {
-  return {
-    id: generateRandomId(),
-    ...quote,
-  };
-});
